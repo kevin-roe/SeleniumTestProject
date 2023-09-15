@@ -1,12 +1,14 @@
+package org.kevinroe;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
 @Test(groups = { "custom", "account" })
-public class AccountTests {
+public class AccountTests extends TestHelper {
     @Test(description = "This is a test", groups = { "tc_account_01" })
     public void tc_account_01() {
-        int expected = 5;
-        Assert.assertEquals(5, expected, "Some Assert");
+        driver.start();
+        driver.hello("Kevin");
     }
 
     @Test(description = "This is a another test", groups = { "tc_account_02" })

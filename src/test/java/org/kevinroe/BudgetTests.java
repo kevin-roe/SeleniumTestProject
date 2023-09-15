@@ -1,3 +1,5 @@
+package org.kevinroe;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
