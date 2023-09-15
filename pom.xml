@@ -45,7 +45,14 @@
                     <artifactId>maven-surefire-plugin</artifactId>
                     <version>3.1.2</version>
                     <configuration>
+                        <runOrder>alphabetical</runOrder>
                         <suiteXmlFiles />
+                        <properties>
+                            <property>
+                                <name>surefire.testng.verbose</name>
+                                <value>2</value>
+                            </property>
+                        </properties>
                     </configuration>
                 </plugin>
             </plugins>

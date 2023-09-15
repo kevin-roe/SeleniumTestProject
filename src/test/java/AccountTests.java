@@ -1,25 +1,22 @@
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
-@Test(groups = { "custom" })
+@Test(groups = { "custom", "account" })
 public class AccountTests {
-    @Test(description = "This is a test", groups = { "one" })
+    @Test(description = "This is a test", groups = { "tc_account_01" })
     public void tc_account_01() {
-        System.out.println("Test 1");
         int expected = 5;
         Assert.assertEquals(5, expected, "Some Assert");
     }
 
-    @Test(description = "This is a another test", groups = { "two" })
+    @Test(description = "This is a another test", groups = { "tc_account_02" })
     public void tc_account_02() {
-        System.out.println("Test 2");
         int expected = 5;
         Assert.assertEquals(5, expected, "Some Assert");
     }
 
-    @Test(description = "This is (yet) another test", groups = { "three" })
+    @Test(description = "This is (yet) another test", groups = { "tc_account_03" })
     public void tc_account_03() {
-        System.out.println("Test 3");
         int expected = 5;
         Assert.assertEquals(5, expected, "Some Assert");
     }
